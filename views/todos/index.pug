@@ -1,0 +1,11 @@
+h1 User list
+form(action="/todos/search",method ="GET")
+  input(type="text" name="q")
+  button Search 
+  
+form(action ="/todos/create",method = "POST")
+  input(type = "text" name = "name")
+  button Create
+
+each todo in todos
+  li= todo.name
